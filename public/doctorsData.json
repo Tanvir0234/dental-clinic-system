@@ -1,0 +1,68 @@
+[
+    
+    {
+        "id":"1",
+        "name":"Prof.Dr.Md.Ruhul Amin ",
+        "degree":"BDS, DAND, DDS, MS",
+        "specialist":"Dental, Oral & Maxillofacial Surgery Specialist ",
+        "image":"https://1.bp.blogspot.com/-jyC2IjKCygU/Xg3m2CZQWPI/AAAAAAAABw0/lZ9RW4ii9xsMd1bmBnrP2nrH9KTEiufxwCEwYBhgL/s200/Prof.%2BDr.%2BRuhul%2BAmin.jpg"
+
+    },
+    {
+        "id":"2",
+        "name":"Professor Dr. Nasir Uddin",
+        "degree":"BDS, MS(OMS)",
+        "specialist":"advanced surgical training ( Japan)",
+        "image":"https://1.bp.blogspot.com/-rrb3s2u5SPo/XZw1xPCyX7I/AAAAAAAABfc/zwnYqElGHa4B8GsmaZwlBudJGN1qTO82wCEwYBhgL/s200/Prof.%2Bdr.%2BNasir%2BUddin.jpg"
+
+    },
+    {
+        "id":"3",
+        "name":"Associate Prof. Dr. Aslam Al mehdi",
+        "degree":"Ph.D. (Periodontal Plastic Surgery) Tokyo, Japan",
+        "specialist":"Periodontal Plastic & Maxillofacial Surgeon ",
+        "image":"https://1.bp.blogspot.com/-ppk8iHZsvjk/YMHps4RQqiI/AAAAAAAAFpU/qUawZLC5pa0kbRcZtBcfRoWYuYmxb0WXQCPcBGAsYHg/w400-h200/Dr.%2BAslam%2BAl%2Bmehdi.jpg"
+
+    },
+    {
+        "id":"4",
+        "name":"Asstt. Prof. Dr.  Sk. Nazrul Islam",
+        "degree":"BDS (DU), PGT (BK), FAES (USA), MCPS (BD), ",
+        "specialist":"Expertise: American Expert in Root Canal, Dental Implant, Orthodontic Bracing and Beauty Dentistry With American Degree.",
+        "image":"https://1.bp.blogspot.com/-GH9eoQfDSCA/YOVbgFj2mUI/AAAAAAAAGAk/8gJeGCsY9DQ1wLh38JZnHhAAy3WTQ43mACPcBGAsYHg/w400-h200/Dr.%2BSk.%2BNazrul%2BIslam%2B%25281%2529.jpg"
+
+    },
+    {
+        "id":"5",
+        "name":"Assistant Prof. Dr. Md. Haider Ali Khan",
+        "degree":"BCS (Health), PGT (Japan), TCTP (Sri Lanka)",
+        "specialist":"Expertise: Orthodontic Treatment, Dental Implant and General Dentistry ",
+        "image":"https://1.bp.blogspot.com/-j9dBw4VVVp8/Xab4z-7ZdzI/AAAAAAAABho/v1LdvCwcvc0WdNbQ6-3flF4bR-UmZ78BQCEwYBhgL/s200/Dr.%2BHaider%2BAli%2BKhan.jpg"
+
+    },
+    {
+        "id":"6",
+        "name":"Dr. Shamim Reza ",
+        "degree":"MSD",
+        "specialist":"Expertise: General dentist and Cosmetic dentistry, Specilly Cosmetic filling, Root canal treatment, Crown and bridge, Specialist in children patient management. ",
+        "image":"https://1.bp.blogspot.com/-Sz8ut6XhsRY/XVgb2UmwEUI/AAAAAAAABaQ/1aE3Chsj1-YrUf3Vu2YLzNgnfjBiNh5rQCPcBGAYYCw/w149-h200/Dr%2BShamim%2BReza.jpg"
+
+    },
+    
+    {
+        "id":"7",
+        "name":"Dr. M. Khalid Rashid",
+        "degree":"BCS (Health), PGT (Perio)",
+        "specialist":"Expertise: Orthodontic Treatment, Dental Implant and General Dentistry",
+        "image":"https://1.bp.blogspot.com/-hHuiIinDakc/XlY7VeGCCRI/AAAAAAAAB28/p2mAPkHkeKgDrUOKs2xrmJCB_-0u7LcQACLcBGAsYHQ/s200/Dr.%2BKhalid%2BRashid.jpg.png"
+
+    },
+    {
+        "id":"8",
+        "name":"Dr. Naser Md. Kamrul Hasan (Riad)",
+        "degree":"PGT in Oral & Maxillofacial Surgery (DDCH), ",
+        "specialist":"Root canal Specialist (Endodontist) and Cosmetic Dentistry",
+        "image":"https://1.bp.blogspot.com/-qZPwG1CsOCk/Xag4rXjrRGI/AAAAAAAABiQ/yq1wCFBYTuIaaHj6cBkGlY3bPrBu5tXawCLcBGAsYHQ/s200/Dr.%2BNaser%2Bmd.%2Bkamrul%2Bhasan%2Briad.jpg"
+
+    }
+]

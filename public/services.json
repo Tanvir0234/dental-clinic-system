@@ -1,0 +1,100 @@
+[
+    {
+        "id":"1",
+        "name":"Stained Teeth ",
+        "price":"$150.00",
+        "description":"Your teeth are like your laundry: The right approach will remove many   stains. Foods, medications, tobacco, and trauma are some of the things that can discolor your teeth. ",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/getty_rf_photo_of_stained_teeth.jpg"
+
+    },
+    {
+        "id":"2",
+        "name":"Cavities",
+        "price":"$120.00",
+        "description":"These little holes in your teeth are bad news. You get them when a sticky bacteria, called plaque, builds up on your teeth, slowly destroying the hard outer shell, called enamel.",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/princ_rm_xray_of_tooth_decay.jpg"
+
+    },
+    {
+        "id":"3",
+        "name":"Chipped Tooth",
+        "price":"$130.00",
+        "description":"It's the No. 1 type of dental injury. An accident can cause a chip. So can something much less dramatic, like chomping popcorn.",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/getty_rf_photo_of_chipped_tooth.jpg"
+
+    },
+    {
+        "id":"4",
+        "name":"Impacted Teeth ",
+        "price":"$230.99",
+        "description":"An adult tooth that doesn't come in properly is impacted. It usually happens when a tooth is stuck against another tooth, bone, or soft tissue. ",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/getty_rm_photo_of_impacted_wisdom_tooth.jpg"
+
+    },
+    {
+        "id":"5",
+        "name":"Cracked Tooth",
+        "price":"$110.00",
+        "description":"You were playing football without a mouth guard, or chewing, or maybe you don’t know how it happened, but now you’ve got a cracked molar. ",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/aacd_rf_photo_of_fillings_in_cracked_tooth.jpg"
+
+    },
+    {
+        "id":"6",
+        "name":"Sensitive to Cold ",
+        "price":"$80.00",
+        "description":"Ice cream should taste good, not make you wince when the cold hits your teeth. The first step is to find the cause. ",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/getty_rf_photo_of_man_eating_icecream_cone.jpg"
+
+    },
+    
+    {
+        "id":"7",
+        "name":"Hyperdontia",
+        "price":"$230.00",
+        "description":"How many teeth are in your mouth? If you’re like most people, you had 20 primary, or “baby,” teeth, and you now have 32 adult teeth. ",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/getty_rm_xray_of_hyperdontia.jpg"
+
+    },
+    {
+        "id":"8",
+        "name":"Crooked Teeth",
+        "price":"$270.00",
+        "description":"The fix -- orthodontia -- isn’t just for kids. And straightening crooked teeth and aligning your bite doesn’t just make for a prettier smile.",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/getty_rf_photo_of_braces.jpg"
+
+    },
+    {
+        "id":"9",
+        "name":"Gap Between Teeth ",
+        "price":"$93.00",
+        "description":"You may not consider a gap between the front teeth a problem at all. Famous people who sport the look include singer Madonna",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/getty_rf_photo_of_gap_between_front_teeth.jpg"
+
+    },
+    {
+        "id":"10",
+        "name":"Gum Problems",
+        "price":"$120",
+        "description":"Do your gums bleed easily? Are they tender? Do you notice them pulling away from your teeth? You might have gum disease (gingivitis).",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/tooth_problems_slideshow/getty_rf_photo_of_gingivitis.jpg"
+
+    },
+    {
+        "id":"11",
+        "name":"Grinding Teeth ",
+        "price":"$70.00",
+        "description":"Teeth grinding, or bruxism, can wear teeth down over time. It is most often caused by stress and sleeping habits. ",
+        "image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/habits_that_wreck_your_teeth_slideshow/getty_rm_photo_of_clenched_teeth.jpg"
+
+    },
+    {
+        "id":"12",
+        "name":"Broken Tooth",
+        "price":"$8.00",
+        "description":"Dental Treatments for a broken, cracked or chipped tooth will depend on how bad the damage is.",
+        "image":"https://www.cunningdental.com/_/img/dental-problems/xbroken-tooth.jpg.pagespeed.ic.HvZdHjfvWG.jpg"
+
+    }
+    
+]
