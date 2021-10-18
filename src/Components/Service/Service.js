@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Service = (props) => {
-const {image,name,price,description}=props.service;
+    const { image, name, price, description } = props.service;
     return (
-        
-            <div className="col-lg-4 col-sm-12 mb-3 ">
+
+        <div className="col-lg-4 col-sm-12 mb-3 ">
 
             <div className="card h-100 ">
 
@@ -16,14 +16,14 @@ const {image,name,price,description}=props.service;
                     <p className="text-center">{description}</p>
                     <h6 className="card-text text-center"> Treatment Fee : {price}</h6>
                 </div>
-                
-                    <button className="btn btn-primary mb-3">Booking{name}</button>
-            
 
-                </div>
+                <button className="btn btn-primary mx-5 mb-4">Booking {name}</button>
+
+
+            </div>
 
         </div>
-        
+
     );
 };
 

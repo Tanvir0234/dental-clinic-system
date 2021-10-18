@@ -7,6 +7,7 @@ import DoctorList from './Components/DoctorList/DoctorList';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
+import Services from './Components/Services/Services';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
              <Home></Home>
         </Route>
         <Route path="/services">
-             
+             <Services></Services>
         </Route>
         <Route path="/contactUs">
              <Contact></Contact>

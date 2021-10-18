@@ -1,0 +1,8 @@
+.title{
+    border-left: 2px solid #00A3C8;
+    padding-left: 15px;
+}
+.about-banner{
+background-image: url(../../image/medical.jpg);
+height: 200px;
+}
