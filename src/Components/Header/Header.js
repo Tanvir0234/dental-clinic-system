@@ -12,11 +12,11 @@ const Header = () => {
 
                 <div>
                     <div className="text-center mt-4">
-                        <Link className="m-2" to="/home">Home</Link>
-                        <Link className="m-2" to="/services">Services</Link>
-                        <Link className="m-2" to="/doctors">Doctors</Link>
-                        <Link className="m-2" to="/aboutUs">About Us</Link>
-                        <Link className="m-2" to="/contactUs">Contact Us</Link>
+                        <Link className="m-2 btn btn-outline-primary" to="/home">Home</Link>
+                        <Link className="m-2 btn btn-outline-primary" to="/services">Services</Link>
+                        <Link className="m-2 btn btn-outline-primary" to="/doctors">Doctors</Link>
+                        <Link className="m-2 btn btn-outline-primary" to="/aboutUs">About Us</Link>
+                        <Link className="m-2 btn btn-outline-primary" to="/contactUs">Contact Us</Link>
                     </div>
                 </div>
 
@@ -28,9 +28,9 @@ const Header = () => {
                     <button className="btn btn-primary m-2 ">Sign Out</button>
 
 
-
+                <Link to="/login">
                     <button className="btn btn-dark m-2 ">Sign In</button>
-
+                </Link>
 
 
                     <button className="btn btn-primary m-2 ">Sign up</button>

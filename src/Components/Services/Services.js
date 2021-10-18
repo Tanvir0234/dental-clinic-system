@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useService from '../../Hooks/useService';
 
 
@@ -23,9 +24,9 @@ const Services = () => {
                                 <h6 className="card-text text-center"> Treatment Fee : {service.price}</h6>
                             </div>
 
-                            
+                            <Link to={`/details/${service.id}`}>
                             <button className="btn btn-primary align mx-4 mb-3">Booking {service.name}</button>
-                            
+                            </Link>
                         </div>
                         
                     </div>

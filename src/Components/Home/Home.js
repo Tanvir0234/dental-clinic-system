@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 import { Carousel } from 'react-bootstrap';
 import useService from '../../Hooks/useService';
 import Service from '../Service/Service';
@@ -9,6 +10,7 @@ import img from '../../image/event.png'
 
 const Home = () => {
     const { services } = useService([])
+    
 
     return (
         <div>
@@ -70,12 +72,13 @@ const Home = () => {
                         <img className="event img-fluid" src={img} alt="" />
                     </div>
                 </div>
-                <div className="col-lg-6 col-sm-12 mt-5">
+                <div className="col-lg-6 col-sm-12 mt-5 ">
                     <div className="pt-5 mt-5 ">
                         <h4>Notice</h4>
                         <hr />
 
                     </div>
+
                     <div className="pt-5 mt-5">
                         <h4>Admission Result FF cota</h4>
                         <hr />
