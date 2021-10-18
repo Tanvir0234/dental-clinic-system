@@ -1,7 +1,10 @@
 import React from 'react';
 import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
+  
     return (
         <div>
             <footer className="text-center text-white background">
