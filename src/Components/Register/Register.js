@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getAuth, createUserWithEmailAndPassword,updateProfile } from "firebase/auth";
 import { Link } from 'react-router-dom';
+import image from '../../image/registration-form-template.jpg'
 
 
 const Register = () => {
@@ -50,10 +51,10 @@ const Register = () => {
     return (
         <div className="row">
             <div className="col-lg-6 col-sm-12">
-
+              <img src={image} alt="" />
             </div>
             <div className="col-lg-6 col-sm-12">
-                <form onSubmit={handleRegistration}>
+                <form className="me-3" onSubmit={handleRegistration}>
                     <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label">Name</label>
                         <input onBlur={handleName} type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Name" />

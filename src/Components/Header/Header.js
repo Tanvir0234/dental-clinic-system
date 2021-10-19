@@ -46,7 +46,7 @@ const Header = () => {
             <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/aboutUs">
               About Us
             </Nav.Link>
-            {user.email ? '' :<Nav.Link className="btn btn-primary margin me-2  fw-bold text-white" as={Link} to="/registration">
+            {user.email ? '' :<Nav.Link className="btn btn-primary margin me-2  fw-bold text-white" as={Link} to="/register">
               Sign Up
             </Nav.Link>}
 
