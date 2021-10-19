@@ -10,10 +10,12 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Services from './Components/Services/Services';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
     <div>
+         <AuthProvider>
       <Router>
       <Header></Header>
       <Switch>
@@ -45,7 +47,7 @@ function App() {
       </Switch>
       <Footer></Footer>
       </Router>
-
+      </AuthProvider>
       
 
       

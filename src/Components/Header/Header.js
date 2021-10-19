@@ -2,12 +2,14 @@ import React from 'react';
 import './Header.css'
 import logo from '../../image/images.png'
 import { Link } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 
 
 
 
 const Header = () => {
-    
+    const { handleLogOut, user } = useAuth();
+
     return (
         <div>
             <div className="d-flex justify-content-between bg-light">
@@ -27,15 +29,20 @@ const Header = () => {
 
 
                 <div className="mt-3">
+                
+                {user?.email && <span>{user.displayName}</span> }
 
+                    {
+                        user?.email ?
+                        <Link to="/login">
+                            <button onClick={handleLogOut} className="btn btn-danger m-2 ">Sign Out</button>
+                        </Link>
+                        :
+                        <Link to="/login">
+                            <button className="btn btn-outline-primary m-2 ">Sign In</button>
+                        </Link>
+                    }
 
-                    <Link to="/login">
-                        <button   className="btn btn-danger m-2 ">Sign Out</button>
-                    </Link>
-
-                    <Link to="/login">
-                        <button className="btn btn-outline-primary m-2 ">Sign In</button>
-                    </Link>
 
 
                     <button className="btn btn-primary m-2 ">Sign up</button>

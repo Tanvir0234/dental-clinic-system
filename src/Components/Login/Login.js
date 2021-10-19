@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../Hooks/useFirebase';
+import useAuth from '../../Hooks/useAuth';
+
 
 
 import './Login.css'
 
 const Login = () => {
   
-  //const {handleGoogle} = useFirebase();
+  const {handleGoogle} = useAuth();
 
     return (
         
@@ -22,8 +23,8 @@ const Login = () => {
                   </form>
                   <br />
                   <p>New to Our Website <Link to="/register">Create Acount</Link> </p>
-                  <button   className="btn btn-google btn-login text-uppercase fw-bold">Sign in with google</button><br />
-                  <button className="btn btn-facebook btn-login text-uppercase fw-bold mt-3">Sign in with Facebook</button>
+                  <button onClick={handleGoogle}   className="btn btn-google btn-login text-uppercase fw-bold">Sign in with google</button><br />
+                  
                   
                </div>
                </div>
