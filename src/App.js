@@ -9,7 +9,9 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Services from './Components/Services/Services';
+import Success from './Components/SuccessBooking/Success';
 import AuthProvider from './Context/AuthProvider';
 
 function App() {
@@ -43,6 +45,9 @@ function App() {
         <Route path="/login">
              <Login></Login>
         </Route>
+        <PrivateRoute path="/success">
+             <Success></Success>
+        </PrivateRoute>
 
       </Switch>
       <Footer></Footer>
