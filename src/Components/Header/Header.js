@@ -3,53 +3,77 @@ import './Header.css'
 import logo from '../../image/images.png'
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 
 
 
 const Header = () => {
+    
     const { handleLogOut, user } = useAuth();
 
     return (
-        <div>
-            <div className="d-flex justify-content-between bg-light">
-                <div>
-                    <img className="w-50 ps-4 " src={logo} alt="" />
-                </div>
+        
+        <>
+         <Navbar expand="lg"  variant="light" bg="light">
+      <Container>
+        <Navbar.Brand className="text-danger fw-bold"  href="#home">
+        <img
+          alt=""
+          src={logo}
+          width="30"
+          height="30"
+          className="d-inline-block align-top"
+        />{' '}
+        Dazzle <span className="text-primary fw-bold">Dentistry</span>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto py-2" >
+            <Nav.Link className=" margin btn btn-outline-primary fw-bold me-2" as={Link} to="/home">
+              Home
+            </Nav.Link>
+            <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/services">
+              Services
+            </Nav.Link>
+            <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/doctors">
+              Doctors
+            </Nav.Link>
+            <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/contactUs">
+              Contact Us
+            </Nav.Link>
 
-                <div>
-                    <div className="text-center mt-4">
-                        <Link className="m-2 btn btn-outline-primary" to="/home">Home</Link>
-                        <Link className="m-2 btn btn-outline-primary" to="/services">Services</Link>
-                        <Link className="m-2 btn btn-outline-primary" to="/doctors">Doctors</Link>
-                        <Link className="m-2 btn btn-outline-primary" to="/aboutUs">About Us</Link>
-                        <Link className="m-2 btn btn-outline-primary" to="/contactUs">Contact Us</Link>
-                    </div>
-                </div>
+            <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/aboutUs">
+              About Us
+            </Nav.Link>
+            {user.email ? '' :<Nav.Link className="btn btn-primary margin me-2  fw-bold text-white" as={Link} to="/registration">
+              Sign Up
+            </Nav.Link>}
 
-
-                <div className="mt-3">
+            {user.email ? (
+              <>
+                <p className="mb-0 mt-2 ms-3 fw-bold">
+                 
+                  Hello, {user.displayName}
+                </p>
+                <button
+                  onClick={handleLogOut}
+                  className="btn btn-danger fw-bold"
+                >
+                  Log Out
+                </button>{" "}
                 
-                {user?.email && <span>{user.displayName}</span> }
-
-                    {
-                        user?.email ?
-                        <Link to="/login">
-                            <button onClick={handleLogOut} className="btn btn-danger m-2 ">Sign Out</button>
-                        </Link>
-                        :
-                        <Link to="/login">
-                            <button className="btn btn-outline-primary m-2 ">Sign In</button>
-                        </Link>
-                    }
-
-
-
-                    <button className="btn btn-primary m-2 ">Sign up</button>
-
-                </div>
-            </div>
-        </div>
+              </>
+            ) : (
+              <Nav.Link className="btn btn-outline-primary text-dark fw-bold" as={Link} to="/login">
+                log In
+              </Nav.Link>
+            )}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+        </>
     );
 };
 

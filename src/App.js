@@ -9,7 +9,9 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
+import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Register from './Components/Register/Register';
 import Services from './Components/Services/Services';
 import Success from './Components/SuccessBooking/Success';
 import AuthProvider from './Context/AuthProvider';
@@ -45,9 +47,15 @@ function App() {
         <Route path="/login">
              <Login></Login>
         </Route>
+        <Route path="/register">
+          <Register></Register>
+        </Route>
         <PrivateRoute path="/success">
              <Success></Success>
         </PrivateRoute>
+        <Route path="*">
+          <NotFound></NotFound>
+        </Route>
 
       </Switch>
       <Footer></Footer>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import image from '../../image/medical-doctor-with-big-teeth-illustration-concept-free-vector.webp'
 
 const Contact = () => {
@@ -18,7 +19,9 @@ const Contact = () => {
                     <input className="ms-5" type="text" name ="" id="" placeholder="Enter Problem" /><br /><br />
                     <input className="ms-5" type="text" name="" id="" placeholder="Mobile Number" /><br /><br />
                     <input className="ms-5" type="text" name="" id="" placeholder="Enter Address" /><br /><br />
+                   <Link to="/success">
                     <input className="ms-5 btn btn-primary" type="submit" value="Booking" />
+                    </Link>
                 </div>
             </div>
 

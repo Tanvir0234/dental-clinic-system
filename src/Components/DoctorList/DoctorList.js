@@ -10,14 +10,15 @@ const DoctorList = () => {
     return (
         <div className="container">
             <h1 className="text-center mb-4">Doctors</h1>
-            <div className="row g-4">
+        
+            <div className="row g-4 mt-3">
                 {doctors.map((doctor) => (
                     
                     <div  key={doctor.id} className="col-md-6 col-lg-4 col-sm-12">
                         
-                        <div  className="card h-100">
+                        <div  className="card h-100 rounded shadow">
 
-                            <img src={doctor.image} className="align-img img-fluid rounded-start w-75 h-50" alt="..." />
+                            <img src={doctor.image} className="align-img img-fluid rounded-start w-100 h-50" alt="..." />
 
 
                             <div className="card-body">

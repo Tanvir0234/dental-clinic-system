@@ -1,83 +1,64 @@
 import React from 'react';
 import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { } from '@fortawesome/free-solid-svg-icons';
+import { FaFacebookF ,FaGoogle,FaTwitterSquare } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
-  
-    return (
-        <div>
-            <footer className="text-center text-white background">
+  const mapIcon = <FontAwesomeIcon icon={faMapMarkedAlt} />
+  return (
 
-  <div className="container pt-4">
-    
-    <section className="mb-4">
-      
-      <a
-        className="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        >
-            <i className="fab fa-facebook-f"></i>
-            </a>
+    <div>
+      <footer className="text-center text-dark background">
 
-      
-      <a
-        className="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i className="fab fa-twitter"></i
-      ></a>
+        <div className="container pt-4">
 
-      
-      <a
-        className="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i className="fab fa-google"></i
-      ></a>
+          <div className="row">
+            <div className="col-md-6 col-sm-12">
+              <div className="d-flex justify-content-center align-items-center">
+              <div className="me-3">
+                <FaFacebookF></FaFacebookF>
+                </div>
+                <div>
+                  <FaGoogle></FaGoogle>
+                  </div>
+              <div className="ms-3">
+                <FaTwitterSquare></FaTwitterSquare>
+                </div>
+              </div>
+             
+              
+              
+             
+            </div>
 
-      
-      <a
-        className="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i className="fab fa-instagram"></i
-      ></a>
+            
+            <div className="col-md-6 col-sm-12">
+            <div className="d-flex justify-content-center align-items-center">
+            <div className="foter-phone-icon m-2 ">
+                {mapIcon}
+              </div>
+              <div>
+                <p>
+                  107,Beside Central Plaza
+                  <br /> GEC Avenue, Chittagong, Bangladesh
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
 
-      
-      <a
-        className="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i className="fab fa-linkedin"></i
-      ></a>
-      
-      <a
-        className="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i className="fab fa-github"></i
-      ></a>
-    </section>
-    
-  </div>
-  
-
-  
-  <div className="text-center text-dark p-3 footer-bottom">
-   <p className="fw-semibold">&copy; 2021 Copyright.</p>
-  </div>
-  
-</footer>
         </div>
-    );
+
+
+
+        <div className="text-center text-white bg-dark p-3 footer-bottom">
+          <p className="fw-semibold">&copy; 2021 Copyright.</p>
+        </div>
+
+      </footer>
+    </div>
+  );
 };
 
 export default Footer;

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
 import { Link, useLocation ,useHistory} from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
@@ -7,14 +9,36 @@ import useAuth from '../../Hooks/useAuth';
 import './Login.css'
 
 const Login = () => {
-
   
-  const {handleGoogle} = useAuth();
+   const {handleGoogle} = useAuth();
   const [user, setUser] = useState({});
+  const [email,setEmail] = useState({});
+  const [password, setPassWord] = useState({});
     const [error, setError] = useState('')
     const location = useLocation()
     const history = useHistory()
     const redirect_uri = location.state?.from || '/home' ;
+
+    const handleEmail=(e)=>{
+     setEmail(e.target.value)
+    }
+
+    const handlePassword=(e)=>{
+      setPassWord(e.target.value)
+    }
+    const auth = getAuth();
+    const logInWithEmail =(e)=>{
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+    .then(result=>{
+      const user = result.user;
+      console.log(user)
+      history.push(redirect_uri);
+    }).catch(error=>{
+      setError(error.message)
+    })
+
+  }
 
   const googleLogIn=()=>{
        handleGoogle()
@@ -33,9 +57,9 @@ const Login = () => {
                <div className="bg-light m-5 ">
                <h1 className="text-center">Log In</h1>
                <div className="p-3">
-                  <form onSubmit="">
-                    <input type="email" placeholder="Email" /><br /><br />
-                    <input type="password" placeholder="Password" /><br /><br />
+                  <form onSubmit={logInWithEmail}>
+                    <input onBlur={handleEmail} type="email" placeholder="Email" /><br /><br />
+                    <input onBlur={handlePassword} type="password" placeholder="Password" /><br /><br />
                     <input className="btn btn-primary" type="submit" value="submit" />
                   </form>
                   <br />
