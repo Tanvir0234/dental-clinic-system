@@ -62,7 +62,7 @@ const Header = () => {
                 <Nav.Link as={Link} to="/login">
                 <button
                   onClick={handleLogOut}
-                  className="btn btn-danger ms-2 fw-bold "
+                  className="btn btn-danger fw-bold "
                 >
                   Log Out
                 </button>{" "}

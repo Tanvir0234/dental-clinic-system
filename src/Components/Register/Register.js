@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { getAuth, createUserWithEmailAndPassword,updateProfile } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { Link } from 'react-router-dom';
 import image from '../../image/registration-form-template.jpg'
 import useAuth from '../../Hooks/useAuth';
-import {useLocation} from 'react-router-dom';
-
+import { useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router';
 const Register = () => {
+    const history = useHistory()
     const Location = useLocation();
     const [email, setEmail] = useState('')
     const [error, setError] = useState('')
@@ -14,7 +15,7 @@ const Register = () => {
 
     const handleName = e => {
         setName(e.target.value)
-        
+
     }
 
     const handleEmail = e => {
@@ -25,27 +26,28 @@ const Register = () => {
     }
 
     const auth = getAuth();
-    const{user,setUser}=useAuth();
+    const { user, setUser } = useAuth();
     const handleReg = () => {
-       
-          
+
+
         if (password.length < 6) {
             setError('Please Password at least 6 characters')
             return;
         }
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
-                const user = result.user;
-                
-        updateProfile(auth.currentUser, {
-            displayName: name,
-            
-          });
-          setUser(user)
-          Location.reload();
+                setUser({})
                 setError('')
-               
+                history.push('/login');
                 
+                updateProfile(auth.currentUser, {
+                    displayName: name,
+
+                });
+
+                
+
+
             }).catch(error => {
                 setError(error.message)
             })
@@ -58,7 +60,7 @@ const Register = () => {
     return (
         <div className="row">
             <div className="col-lg-6 col-sm-12">
-              <img src={image} alt="" />
+                <img src={image} alt="" />
             </div>
             <div className="col-lg-6 col-sm-12">
                 <div className="me-3" >
@@ -78,7 +80,7 @@ const Register = () => {
                     <div className="mb-3 text-danger">{error}</div>
                     <div className="mb-3">Already Registered? <Link to="/login">Log in</Link></div>
                     <Link to="/home">
-                    <button type="submit" onClick={handleReg} className="btn btn-primary">Register</button>
+                        <button type="submit" onClick={handleReg} className="btn btn-primary">Register</button>
                     </Link>
                 </div>
             </div>
