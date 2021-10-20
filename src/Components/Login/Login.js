@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
+import { FaGofore } from "react-icons/fa";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 import { Link, useLocation ,useHistory} from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
-
-
-
-import './Login.css'
+import './Login.css';
 
 const Login = () => {
   
@@ -32,7 +30,7 @@ const Login = () => {
     signInWithEmailAndPassword(auth, email, password)
     .then(result=>{
       const user = result.user;
-      console.log(user)
+      setUser(user);
       history.push(redirect_uri);
     }).catch(error=>{
       setError(error.message)
@@ -53,7 +51,7 @@ const Login = () => {
 
     return (
         
-             <div className="d-flex justify-content-center align-items-center bg-primary mt-5 ">
+             <div className="d-flex justify-content-center align-items-center bg-primary  ">
                <div className="bg-light m-5 ">
                <h1 className="text-center">Log In</h1>
                <div className="p-3">
@@ -64,7 +62,8 @@ const Login = () => {
                   </form>
                   <br />
                   <p>New to Our Website <Link to="/register">Create Acount</Link> </p>
-                  <button onClick={googleLogIn}   className="btn btn-google btn-login text-uppercase fw-bold">Sign in with google</button><br />
+                  <button onClick={googleLogIn}   className="btn btn-google btn-login text-uppercase fw-bold"><FaGofore/> &nbsp;  
+                   Sign in with google</button><br />
                   
                   
                </div>

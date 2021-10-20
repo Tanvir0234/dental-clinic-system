@@ -97,7 +97,7 @@ const Home = () => {
 
 
 
-            <div className="container mt-2">
+            <div className="container mt-2 ">
                 <h1 className="text-center m-4">Our <span className="text-primary">Services</span> </h1>
                 <div className="row">
                     {
@@ -109,7 +109,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="container pb-2">
-                <div className="row">
+                <div className="row mb-4">
                     <h1 className="mb-2">Upcoming <span className="text-primary">Events</span></h1>
                     <div className="col-lg-6 col-sm-12 mt-3 mb-3 pe-2 shadow rounded">
 

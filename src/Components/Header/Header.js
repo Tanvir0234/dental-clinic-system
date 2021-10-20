@@ -11,6 +11,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 const Header = () => {
     
     const { handleLogOut, user } = useAuth();
+    
 
     return (
         
@@ -30,7 +31,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto py-2" >
-            <Nav.Link className=" margin btn btn-outline-primary fw-bold me-2" as={Link} to="/home">
+            <Nav.Link className="btn btn-outline-primary fw-bold me-2 px-3" as={Link} to="/home">
               Home
             </Nav.Link>
             <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/services">
@@ -39,33 +40,36 @@ const Header = () => {
             <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/doctors">
               Doctors
             </Nav.Link>
+            <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/aboutUs">
+              About Us
+            </Nav.Link>
             <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/contactUs">
               Contact Us
             </Nav.Link>
 
-            <Nav.Link className="btn btn-outline-primary fw-bold me-2" as={Link} to="/aboutUs">
-              About Us
-            </Nav.Link>
-            {user.email ? '' :<Nav.Link className="btn btn-primary margin me-2  fw-bold text-white" as={Link} to="/register">
+            
+            {user?.email ? '' :<Nav.Link className="btn btn-primary margin  rounded-pill  fw-bold text-white" as={Link} to="/register">
               Sign Up
             </Nav.Link>}
 
-            {user.email ? (
+            {user?.email ? (
               <>
+          
                 <p className="mb-0 mt-2 ms-3 fw-bold">
-                 
-                  Hello, {user.displayName}
+             
+                 {user.displayName}
                 </p>
+                <Nav.Link as={Link} to="/login">
                 <button
                   onClick={handleLogOut}
-                  className="btn btn-danger fw-bold"
+                  className="btn btn-danger ms-2 fw-bold "
                 >
                   Log Out
                 </button>{" "}
-                
+                </Nav.Link> 
               </>
             ) : (
-              <Nav.Link className="btn btn-outline-primary text-dark fw-bold" as={Link} to="/login">
+              <Nav.Link className="btn  text-primary fw-bold" as={Link} to="/login">
                 log In
               </Nav.Link>
             )}

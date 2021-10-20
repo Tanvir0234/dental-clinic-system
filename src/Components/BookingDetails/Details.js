@@ -5,6 +5,7 @@ import { faBookMedical } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const Details = () => {
+
     const { serviceId } = useParams();
     const [details, setDetails] = useState([])
     const [singleService,setSingleService] =useState({})

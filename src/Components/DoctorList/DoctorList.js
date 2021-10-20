@@ -9,7 +9,7 @@ const DoctorList = () => {
      },[])
     return (
         <div className="container">
-            <h1 className="text-center mb-4">Doctors</h1>
+            <h1 className="text-center mb-4 mt-4 bg-light">Doctors</h1>
         
             <div className="row g-4 mt-3">
                 {doctors.map((doctor) => (

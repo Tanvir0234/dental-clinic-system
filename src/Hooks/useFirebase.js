@@ -44,7 +44,8 @@ const useFirebase = () => {
     return {
         handleGoogle,
         user,
-        handleLogOut
+        handleLogOut,
+        setUser
     }
 }
 

@@ -10,7 +10,7 @@ const Services = () => {
   const arrowIcon =  <FontAwesomeIcon icon={faAngleDoubleRight} />
     return (
         <div className="container">
-            <h1 className="text-center mb-5">Dental Services</h1>
+            <h1 className="text-center mb-5 mt-4 text-danger">Dental <span className="text-primary">Services</span></h1>
             <div className="row g-4 mt-2">
                 {services.map((service) => (
 
